@@ -3,8 +3,7 @@ import styles from "./Avatar.module.scss";
 
 export default function Avatar({
   size = "90",
-  url = "/images/avatar.png",
-  verified = true,
+  verified = false,
 }) {
   return (
     <div
@@ -13,10 +12,7 @@ export default function Avatar({
     >
       <img src={url} alt="" className={classNames(styles.image)} />
       {verified && (
-        <img
-          src="/images/verified.svg"
-          className={classNames(styles.badge)}
-        />
+        <img src="/images/verified.svg" className={classNames(styles.badge)} />
       )}
     </div>
   );
