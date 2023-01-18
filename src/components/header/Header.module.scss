@@ -1,0 +1,26 @@
+@use "../../styles/colors";
+
+.container {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    background-color: colors.$background_paper;
+    ;
+  }
+
+.searchField {
+    background-color: colors.$background_default;
+    border-radius: 30px;
+    width: 580px;
+
+}
+  
+.searchIcon {
+    color: colors.$text_primary
+}
+
+.textButton {
+    color: colors.$text_primary !important;
+    text-transform: capitalize !important;
+    font-weight: 400 !important;
+}
