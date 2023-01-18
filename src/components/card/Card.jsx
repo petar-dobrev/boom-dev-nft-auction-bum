@@ -43,7 +43,7 @@ export default function Card(props) {
               </Typography>
             </div>
             <Chip
-              label={millify(likes, { lowercase: true })}
+              label={likes > 0 ? millify(likes, { lowercase: true }) : "0"}
               variant="outlined"
               color="secondary"
               icon={<FavoriteIcon />}
