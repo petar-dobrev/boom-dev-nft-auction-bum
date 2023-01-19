@@ -10,6 +10,7 @@ const theme = createTheme({
     },
     secondary: {
       main: "#24F25E",
+      muted: "hsla(137, 89%, 55%, 10%)",
     },
     warning: {
       main: "#FFC120",
