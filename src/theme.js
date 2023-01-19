@@ -79,6 +79,10 @@ const theme = createTheme({
         outlined: {
           backgroundColor: "#181828",
           borderColor: "#181828",
+          color: "#E1E1FC",
+        },
+        icon: {
+          fill: "#E1E1FC",
         },
       },
     },
