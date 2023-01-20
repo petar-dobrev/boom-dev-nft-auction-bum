@@ -35,6 +35,8 @@ export default function Card({
     </div>
   );
 
+  const likesMilified = millify(likes);
+
   const countdown = ({ hours, minutes, seconds }) => (
     <div className={classNames(styles.countdown)}>
       {zeroPad(hours)}:{zeroPad(minutes)}:{zeroPad(seconds)}
@@ -72,7 +74,7 @@ export default function Card({
               </Typography>
             </div>
             <Chip
-              label={millify(likes)}
+              label={likesMilified}
               variant="outlined"
               color="secondary"
               icon={<FavoriteIcon />}
