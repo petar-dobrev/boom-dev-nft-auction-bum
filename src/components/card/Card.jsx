@@ -14,7 +14,7 @@ import { ThemeProvider } from "@mui/material/styles";
 
 export default function Card({
   name = "",
-  likes = "",
+  likes = 0,
   mediaUrl = "",
   user = { avatar: { url: "" }, verified: false },
   price = "",
@@ -73,7 +73,7 @@ export default function Card({
               </Typography>
             </div>
             <Chip
-              label={likes > 0 ? millify(likes, { lowercase: true }) : "0"}
+              label={millify(likes, { lowercase: true })}
               variant="outlined"
               color="secondary"
               icon={<FavoriteIcon />}
