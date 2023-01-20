@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import classNames from "classnames";
 import millify from "millify";
 
@@ -73,7 +72,7 @@ export default function Card({
               </Typography>
             </div>
             <Chip
-              label={millify(likes, { lowercase: true })}
+              label={millify(likes)}
               variant="outlined"
               color="secondary"
               icon={<FavoriteIcon />}
