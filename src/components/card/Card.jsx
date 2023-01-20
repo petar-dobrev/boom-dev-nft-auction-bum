@@ -12,17 +12,15 @@ import styles from "./Card.module.scss";
 import theme from "../../theme";
 import { ThemeProvider } from "@mui/material/styles";
 
-export default function Card(props) {
-  const {
-    name = "",
-    likes = "",
-    mediaUrl = "",
-    user = { avatar: { url: "" }, verified: false },
-    price = "",
-    currency = "",
-    timeLeft,
-  } = props;
-
+export default function Card({
+  name = "",
+  likes = "",
+  mediaUrl = "",
+  user = { avatar: { url: "" }, verified: false },
+  price = "",
+  currency = "",
+  timeLeft,
+}) {
   const handleClick = () => {
     console.log("Like+");
   };
@@ -88,18 +86,3 @@ export default function Card(props) {
     </ThemeProvider>
   );
 }
-
-Card.propTypes = {
-  name: PropTypes.string,
-  likes: PropTypes.number,
-  mediaUrl: PropTypes.string,
-  user: PropTypes.shape({
-    avatar: PropTypes.shape({
-      url: PropTypes.string,
-    }),
-    verified: PropTypes.bool,
-  }),
-  price: PropTypes.string,
-  currency: PropTypes.string,
-  timeLeft: PropTypes.number,
-};
