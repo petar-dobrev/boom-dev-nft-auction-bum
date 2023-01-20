@@ -7,7 +7,7 @@ export default function User(props) {
     name = "",
     info = "",
     avatar = "",
-    size = "55",
+    size = 55,
     verified = false,
   } = props;
 
