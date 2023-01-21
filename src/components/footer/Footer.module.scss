@@ -1,0 +1,22 @@
+@use "../../styles/colors";
+
+.wrapper {
+    background-color: colors.$background_paper;
+  }
+  
+  .container {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .rightsText {
+    font-size: 0.88rem;
+    color: colors.$text_secondary;
+  }
+
+  .textButton {
+    color: colors.$text_primary !important;
+    text-transform: capitalize !important;
+    font-weight: 400 !important;
+}
