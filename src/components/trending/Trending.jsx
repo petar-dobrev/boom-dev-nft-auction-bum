@@ -6,7 +6,6 @@ import {
   Typography,
   FormControl,
   Select,
-  InputLabel,
   MenuItem,
 } from "@mui/material";
 import Card from "../card/Card";
