@@ -7,7 +7,7 @@ import {
 } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import classNames from "classnames";
-import Logo from "../Logo";
+import Logo from "../logo/Logo";
 import styles from "./Header.module.scss";
 
 export default function Header() {

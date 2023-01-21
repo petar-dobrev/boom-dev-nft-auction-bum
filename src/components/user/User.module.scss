@@ -1,0 +1,22 @@
+@use "../../styles/colors";
+
+.user {
+display: flex;
+align-items: center;
+gap: 1rem;
+}
+
+.name {
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+.info {
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: colors.$secondary_main
+}
+
+.name, .info {
+    margin: 0;
+}

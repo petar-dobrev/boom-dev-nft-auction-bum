@@ -1,10 +1,7 @@
 import classNames from "classnames";
 import styles from "./Avatar.module.scss";
 
-export default function Avatar({
-  size = "90",
-  verified = false,
-}) {
+export default function Avatar({ size = 90, verified = false, url }) {
   return (
     <div
       style={{ width: size + "px", height: size + "px" }}
