@@ -25,7 +25,7 @@
         "ext": ".jpg",
         "mime": "image/jpeg",
         "size": 1.49,
-        "url": "https://nft-auction.herokuapp.com/uploads/0xd8a833cd9ccca1fcbc81d81a88fcef03e5efd0f1_150e2878c2.jpg",
+        "url": "https://project-4-api.boom.dev/uploads/0xd8a833cd9ccca1fcbc81d81a88fcef03e5efd0f1_150e2878c2.jpg",
         "previewUrl": null,
         "provider": "local",
         "provider_metadata": null,
@@ -41,8 +41,8 @@
     "published_at": "2021-10-22T08:29:07.092Z",
     "created_at": "2021-10-22T08:29:09.573Z",
     "updated_at": "2021-10-22T08:29:22.206Z",
-    "image": "https://nft-auction.herokuapp.com/uploads/thumbnail_0xc17ff6096ea9488ec3ec1cfbce682c6c9aa5ccbe_5506196823.jpg",
-    "mediaUrl": "https://nft-auction.herokuapp.com/uploads/thumbnail_0xc17ff6096ea9488ec3ec1cfbce682c6c9aa5ccbe_5506196823.jpg",
+    "image": "https://project-4-api.boom.dev/uploads/thumbnail_0xc17ff6096ea9488ec3ec1cfbce682c6c9aa5ccbe_5506196823.jpg",
+    "mediaUrl": "https://project-4-api.boom.dev/uploads/thumbnail_0xc17ff6096ea9488ec3ec1cfbce682c6c9aa5ccbe_5506196823.jpg",
     "source": {
       "id": 734,
       "name": "0xc17ff6096ea9488ec3ec1cfbce682c6c9aa5ccbe.jpg",
@@ -60,14 +60,14 @@
           "height": 156,
           "size": 5.26,
           "path": null,
-          "url": "https://nft-auction.herokuapp.com/uploads/thumbnail_0xc17ff6096ea9488ec3ec1cfbce682c6c9aa5ccbe_5506196823.jpg"
+          "url": "https://project-4-api.boom.dev/uploads/thumbnail_0xc17ff6096ea9488ec3ec1cfbce682c6c9aa5ccbe_5506196823.jpg"
         }
       },
       "hash": "0xc17ff6096ea9488ec3ec1cfbce682c6c9aa5ccbe_5506196823",
       "ext": ".jpg",
       "mime": "image/jpeg",
       "size": 13.77,
-      "url": "https://nft-auction.herokuapp.com/uploads/0xc17ff6096ea9488ec3ec1cfbce682c6c9aa5ccbe_5506196823.jpg",
+      "url": "https://project-4-api.boom.dev/uploads/0xc17ff6096ea9488ec3ec1cfbce682c6c9aa5ccbe_5506196823.jpg",
       "previewUrl": null,
       "provider": "local",
       "provider_metadata": null,
@@ -106,14 +106,14 @@
             "height": 156,
             "size": 5.52,
             "path": null,
-            "url": "https://nft-auction.herokuapp.com/uploads/thumbnail_0xdbef89fdbf1dae5b5ceb5b0ae8ccaed68a0521c9_d85cd115fd.jpg"
+            "url": "https://project-4-api.boom.dev/uploads/thumbnail_0xdbef89fdbf1dae5b5ceb5b0ae8ccaed68a0521c9_d85cd115fd.jpg"
           }
         },
         "hash": "0xdbef89fdbf1dae5b5ceb5b0ae8ccaed68a0521c9_d85cd115fd",
         "ext": ".jpg",
         "mime": "image/jpeg",
         "size": 13.98,
-        "url": "https://nft-auction.herokuapp.com/uploads/0xdbef89fdbf1dae5b5ceb5b0ae8ccaed68a0521c9_d85cd115fd.jpg",
+        "url": "https://project-4-api.boom.dev/uploads/0xdbef89fdbf1dae5b5ceb5b0ae8ccaed68a0521c9_d85cd115fd.jpg",
         "previewUrl": null,
         "provider": "local",
         "provider_metadata": null,
@@ -129,8 +129,8 @@
     "published_at": "2021-10-22T08:29:07.092Z",
     "created_at": "2021-10-22T08:29:10.111Z",
     "updated_at": "2021-10-22T08:29:22.979Z",
-    "image": "https://nft-auction.herokuapp.com/uploads/thumbnail_0xc17ff6096ea9488ec3ec1cfbce682c6c9aa5ccbe_5506196823.jpg",
-    "mediaUrl": "https://nft-auction.herokuapp.com/uploads/thumbnail_0xc17ff6096ea9488ec3ec1cfbce682c6c9aa5ccbe_5506196823.jpg",
+    "image": "https://project-4-api.boom.dev/uploads/thumbnail_0xc17ff6096ea9488ec3ec1cfbce682c6c9aa5ccbe_5506196823.jpg",
+    "mediaUrl": "https://project-4-api.boom.dev/uploads/thumbnail_0xc17ff6096ea9488ec3ec1cfbce682c6c9aa5ccbe_5506196823.jpg",
     "source": {
       "id": 773,
       "name": "0xa5192c2be7bf2603bbbae09c340dfeac07275a7a.jpg",
@@ -148,7 +148,7 @@
           "height": 156,
           "size": 1.82,
           "path": null,
-          "url": "https://nft-auction.herokuapp.com/uploads/thumbnail_0xa5192c2be7bf2603bbbae09c340dfeac07275a7a_93a8d3aa6f.jpg"
+          "url": "https://project-4-api.boom.dev/uploads/thumbnail_0xa5192c2be7bf2603bbbae09c340dfeac07275a7a_93a8d3aa6f.jpg"
         },
         "small": {
           "name": "small_0xa5192c2be7bf2603bbbae09c340dfeac07275a7a.jpg",
@@ -159,14 +159,14 @@
           "height": 500,
           "size": 8.77,
           "path": null,
-          "url": "https://nft-auction.herokuapp.com/uploads/small_0xa5192c2be7bf2603bbbae09c340dfeac07275a7a_93a8d3aa6f.jpg"
+          "url": "https://project-4-api.boom.dev/uploads/small_0xa5192c2be7bf2603bbbae09c340dfeac07275a7a_93a8d3aa6f.jpg"
         }
       },
       "hash": "0xa5192c2be7bf2603bbbae09c340dfeac07275a7a_93a8d3aa6f",
       "ext": ".jpg",
       "mime": "image/jpeg",
       "size": 13.81,
-      "url": "https://nft-auction.herokuapp.com/uploads/0xa5192c2be7bf2603bbbae09c340dfeac07275a7a_93a8d3aa6f.jpg",
+      "url": "https://project-4-api.boom.dev/uploads/0xa5192c2be7bf2603bbbae09c340dfeac07275a7a_93a8d3aa6f.jpg",
       "previewUrl": null,
       "provider": "local",
       "provider_metadata": null,
@@ -205,14 +205,14 @@
             "height": 156,
             "size": 3.9,
             "path": null,
-            "url": "https://nft-auction.herokuapp.com/uploads/thumbnail_0xcea201fbbdd1781c6bdbb7acafa83ec2045d3f62_febfe15465.jpg"
+            "url": "https://project-4-api.boom.dev/uploads/thumbnail_0xcea201fbbdd1781c6bdbb7acafa83ec2045d3f62_febfe15465.jpg"
           }
         },
         "hash": "0xcea201fbbdd1781c6bdbb7acafa83ec2045d3f62_febfe15465",
         "ext": ".jpg",
         "mime": "image/jpeg",
         "size": 9.16,
-        "url": "https://nft-auction.herokuapp.com/uploads/0xcea201fbbdd1781c6bdbb7acafa83ec2045d3f62_febfe15465.jpg",
+        "url": "https://project-4-api.boom.dev/uploads/0xcea201fbbdd1781c6bdbb7acafa83ec2045d3f62_febfe15465.jpg",
         "previewUrl": null,
         "provider": "local",
         "provider_metadata": null,
@@ -228,8 +228,8 @@
     "published_at": "2021-10-22T08:29:10.090Z",
     "created_at": "2021-10-22T08:29:16.373Z",
     "updated_at": "2021-10-22T08:29:23.202Z",
-    "image": "https://nft-auction.herokuapp.com/uploads/thumbnail_0xc17ff6096ea9488ec3ec1cfbce682c6c9aa5ccbe_5506196823.jpg",
-    "mediaUrl": "https://nft-auction.herokuapp.com/uploads/thumbnail_0xc17ff6096ea9488ec3ec1cfbce682c6c9aa5ccbe_5506196823.jpg",
+    "image": "https://project-4-api.boom.dev/uploads/thumbnail_0xc17ff6096ea9488ec3ec1cfbce682c6c9aa5ccbe_5506196823.jpg",
+    "mediaUrl": "https://project-4-api.boom.dev/uploads/thumbnail_0xc17ff6096ea9488ec3ec1cfbce682c6c9aa5ccbe_5506196823.jpg",
     "source": {
       "id": 656,
       "name": "0x989873c7d1d6a188eb6bfcc78adaec5cbd48cb09.jpg",
@@ -247,14 +247,14 @@
           "height": 156,
           "size": 3.21,
           "path": null,
-          "url": "https://nft-auction.herokuapp.com/uploads/thumbnail_0x989873c7d1d6a188eb6bfcc78adaec5cbd48cb09_82beacb13c.jpg"
+          "url": "https://project-4-api.boom.dev/uploads/thumbnail_0x989873c7d1d6a188eb6bfcc78adaec5cbd48cb09_82beacb13c.jpg"
         }
       },
       "hash": "0x989873c7d1d6a188eb6bfcc78adaec5cbd48cb09_82beacb13c",
       "ext": ".jpg",
       "mime": "image/jpeg",
       "size": 5.9,
-      "url": "https://nft-auction.herokuapp.com/uploads/0x989873c7d1d6a188eb6bfcc78adaec5cbd48cb09_82beacb13c.jpg",
+      "url": "https://project-4-api.boom.dev/uploads/0x989873c7d1d6a188eb6bfcc78adaec5cbd48cb09_82beacb13c.jpg",
       "previewUrl": null,
       "provider": "local",
       "provider_metadata": null,
@@ -288,7 +288,7 @@
         "ext": ".jpg",
         "mime": "image/jpeg",
         "size": 1.49,
-        "url": "https://nft-auction.herokuapp.com/uploads/0xd8a833cd9ccca1fcbc81d81a88fcef03e5efd0f1_150e2878c2.jpg",
+        "url": "https://project-4-api.boom.dev/uploads/0xd8a833cd9ccca1fcbc81d81a88fcef03e5efd0f1_150e2878c2.jpg",
         "previewUrl": null,
         "provider": "local",
         "provider_metadata": null,
@@ -304,8 +304,8 @@
     "published_at": "2021-10-22T08:29:10.724Z",
     "created_at": "2021-10-22T08:29:16.674Z",
     "updated_at": "2021-10-22T08:29:22.206Z",
-    "image": "https://nft-auction.herokuapp.com/uploads/thumbnail_0xc17ff6096ea9488ec3ec1cfbce682c6c9aa5ccbe_5506196823.jpg",
-    "mediaUrl": "https://nft-auction.herokuapp.com/uploads/thumbnail_0xc17ff6096ea9488ec3ec1cfbce682c6c9aa5ccbe_5506196823.jpg",
+    "image": "https://project-4-api.boom.dev/uploads/thumbnail_0xc17ff6096ea9488ec3ec1cfbce682c6c9aa5ccbe_5506196823.jpg",
+    "mediaUrl": "https://project-4-api.boom.dev/uploads/thumbnail_0xc17ff6096ea9488ec3ec1cfbce682c6c9aa5ccbe_5506196823.jpg",
     "source": {
       "id": 639,
       "name": "0x72abed3186b65b29e4da3faaa926e74d1f763cc5.jpg",
@@ -323,14 +323,14 @@
           "height": 147,
           "size": 2.41,
           "path": null,
-          "url": "https://nft-auction.herokuapp.com/uploads/thumbnail_0x72abed3186b65b29e4da3faaa926e74d1f763cc5_c3e6697515.jpg"
+          "url": "https://project-4-api.boom.dev/uploads/thumbnail_0x72abed3186b65b29e4da3faaa926e74d1f763cc5_c3e6697515.jpg"
         }
       },
       "hash": "0x72abed3186b65b29e4da3faaa926e74d1f763cc5_c3e6697515",
       "ext": ".jpg",
       "mime": "image/jpeg",
       "size": 3.94,
-      "url": "https://nft-auction.herokuapp.com/uploads/0x72abed3186b65b29e4da3faaa926e74d1f763cc5_c3e6697515.jpg",
+      "url": "https://project-4-api.boom.dev/uploads/0x72abed3186b65b29e4da3faaa926e74d1f763cc5_c3e6697515.jpg",
       "previewUrl": null,
       "provider": "local",
       "provider_metadata": null,
