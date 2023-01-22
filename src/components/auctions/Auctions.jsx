@@ -10,7 +10,7 @@ import {
 } from "@mui/material";
 import Card from "../card/Card";
 
-import styles from "./Trending.module.scss";
+import styles from "./Auctions.module.scss";
 import classNames from "classnames";
 
 export default function Trending({ cards = [] }) {
@@ -52,10 +52,11 @@ export default function Trending({ cards = [] }) {
           <Grid item key={Math.floor(Math.random() * Date.now()).toString(16)}>
             <Card
               name={card.name}
-              user={card.user}
-              mediaUrl={card.mediaUrl}
+              user={card.owner}
+              mediaUrl={card.source.url}
               price={card.price}
               currency={card.currency}
+              timeLeft={412341}
             />
           </Grid>
         ))}

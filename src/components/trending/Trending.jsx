@@ -1,4 +1,5 @@
 import { useState } from "react";
+import classNames from "classnames";
 
 import {
   Grid,
@@ -11,7 +12,6 @@ import {
 import Card from "../card/Card";
 
 import styles from "./Trending.module.scss";
-import classNames from "classnames";
 
 export default function Trending({ cards = [] }) {
   const [selectedDateRange, setSelectedDateRange] = useState("This week");
@@ -52,8 +52,8 @@ export default function Trending({ cards = [] }) {
           <Grid item key={Math.floor(Math.random() * Date.now()).toString(16)}>
             <Card
               name={card.name}
-              user={card.user}
-              mediaUrl={card.mediaUrl}
+              user={card.owner}
+              mediaUrl={card.source.url}
               price={card.price}
               currency={card.currency}
             />

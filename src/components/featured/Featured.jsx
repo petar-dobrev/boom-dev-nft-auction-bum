@@ -5,15 +5,6 @@ import { Container, ImageList, ImageListItem } from "@mui/material";
 
 import styles from "./Featured.module.scss";
 
-// function srcset(image, size = 500, rows = 1, cols = 1) {
-//   return {
-//     src: `${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format`,
-//     srcSet: `${image}?w=${size * cols}&h=${
-//       size * rows
-//     }&fit=crop&auto=format&dpr=2 2x`,
-//   };
-// }
-
 export default function Featured({ items = [] }) {
   const router = useRouter();
   const handleClick = (e) => {
@@ -24,15 +15,15 @@ export default function Featured({ items = [] }) {
   return (
     <Container maxWidth="xl">
       <ImageList variant="quilted" cols={6} rowHeight={226} gap={20}>
-        {items.map((item) => (
+        {items.map((item, index) => (
           <ImageListItem
             key={item.image}
-            cols={item.cols || 1}
-            rows={item.rows || 1}
+            cols={index === 0 ? 3 : 1}
+            rows={index === 0 ? 2 : 1}
             onClick={handleClick}
           >
             <img
-              src={item.image}
+              src={item.source.url}
               alt={item.title}
               data-href={item.href}
               loading="lazy"
