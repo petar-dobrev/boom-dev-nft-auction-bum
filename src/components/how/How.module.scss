@@ -1,0 +1,55 @@
+@use "../../styles/colors";
+
+.wrapper {
+  width: 100%;
+  background-color: colors.$primary_main;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  position: relative;
+  height: 640px;
+  max-width: 1440px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column !important;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100%;
+}
+
+@media (max-width: 1500px) {
+  .content {
+    padding-left: 5%;
+  }
+}
+
+.title,
+.text {
+  margin: 0;
+}
+
+.title {
+  font-size: 3.75rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.text {
+  max-width: 500px;
+}
+
+.button {
+  margin-top: 40px !important;
+  background-color: #fff !important;
+  color: colors.$primary_main !important;
+}
+
+.steps {
+  position: absolute;
+  top: -5%;
+  right: 5%;
+}
