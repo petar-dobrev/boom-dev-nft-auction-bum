@@ -56,6 +56,7 @@ export default function Trending({ cards = [] }) {
               mediaUrl={card.source.url}
               price={card.price}
               currency={card.currency}
+              likes={card.likes}
             />
           </Grid>
         ))}
