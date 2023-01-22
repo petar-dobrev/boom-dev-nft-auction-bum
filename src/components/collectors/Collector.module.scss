@@ -1,0 +1,24 @@
+@use "../../styles/colors";
+
+
+.container {
+ width: 340px;
+ padding: 15px;
+}
+
+.container:first-child {
+    border-radius: 15px 15px 0px 0px;
+}
+
+.container:last-child {
+    border-radius: 0px 0px 15px 15px;
+
+}
+
+.darker {
+    background-color:rgba(78, 36, 242, 0.1);
+}
+
+.lighter {
+    background-color: rgba(78, 36, 242, 0.2);
+}
