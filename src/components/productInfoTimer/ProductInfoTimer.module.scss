@@ -1,0 +1,41 @@
+@use "../../styles/colors";
+
+.product-info-timer {
+  width: 218px;
+  height: 118px;
+  border-radius: 15px;
+  background-color: colors.$secondary_main;
+  color: colors.$background_paper
+
+}
+
+.title {
+  height: 37px;
+  border-radius: 15px 15px 0 0;
+  background-color: rgba(12, 12, 20, 0.1);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+}
+
+.title p {
+  margin: 0;
+}
+
+.timer {
+  height: 81px;
+}
+
+.title,
+.timer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.countdown {
+    font-size: 1.9rem;
+    font-weight: 700;
+}
