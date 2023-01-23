@@ -1,0 +1,34 @@
+@use "../../styles/colors";
+
+.product-info-creator {
+  width: 340px;
+  height: 118px;
+  border-radius: 15px;
+  background-color: colors.$background_paper;
+}
+
+.title {
+  height: 37px;
+  border-radius: 15px 15px 0 0;
+  background-color: rgba(78, 36, 242, 0.1);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: colors.$text_secondary;
+}
+
+.title p {
+  margin: 0;
+}
+
+.user-container {
+  height: 81px;
+}
+
+.title,
+.user-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+}
