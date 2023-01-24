@@ -17,7 +17,7 @@ export default function Featured({ items = [] }) {
       <ImageList variant="quilted" cols={6} rowHeight={226} gap={20}>
         {items.map((item, index) => (
           <ImageListItem
-            key={item.image}
+            key={Math.floor(Math.random() * Date.now()).toString(16)}
             cols={index === 0 ? 3 : 1}
             rows={index === 0 ? 2 : 1}
             onClick={handleClick}

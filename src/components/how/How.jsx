@@ -28,6 +28,7 @@ export default function How({ description, title, items = [], link }) {
               number={index + 1}
               title={item.title}
               description={item.description}
+              key={Math.floor(Math.random() * Date.now()).toString(16)}
             />
           ))}
         </Grid>
