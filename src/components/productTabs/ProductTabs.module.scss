@@ -1,0 +1,31 @@
+@use "../../styles/colors";
+
+.product-tabs {
+  width: 600px;
+}
+
+.tab-panel-details {
+  color: colors.$text_secondary;
+}
+
+.table-row:nth-child(odd) {
+    background-color: rgba(78, 36, 242, .05)
+}
+
+.table-row:nth-child(even) {
+    background-color:rgba(78, 36, 242, .15);
+}
+
+.bid-cell,
+.date-cell {
+  font-size: 0.88rem !important;
+  font-weight: 700 !important;
+}
+
+.bid-cell {
+  color: colors.$secondary_main !important;
+}
+
+.date-cell {
+  color: colors.$text_secondary !important;
+} 
