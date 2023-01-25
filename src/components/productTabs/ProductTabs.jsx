@@ -124,7 +124,7 @@ export default function ProductTabs({
                     align="right"
                     className={classNames(styles["bid-cell"])}
                   >
-                    {bid.ammount} ETH
+                    {bid.amount} ETH
                   </TableCell>
                   <TableCell
                     align="right"
