@@ -40,29 +40,7 @@ function a11yProps(index) {
   };
 }
 
-export default function ProductTabs({
-  text,
-  bids = [
-    {
-      user: {
-        avatar: "",
-        name: "",
-        verified: false,
-      },
-      ammount: 0,
-      date: "",
-    },
-    {
-      user: {
-        avatar: "",
-        name: "",
-        verified: true,
-      },
-      ammount: 0,
-      date: "",
-    },
-  ],
-}) {
+export default function ProductTabs({ text, bids = [] }) {
   const [value, setValue] = useState(0);
 
   const handleChange = (event, newValue) => {
@@ -139,5 +117,5 @@ export default function ProductTabs({
         </TableContainer>
       </TabPanel>
     </Box>
-  ); 
+  );
 }
