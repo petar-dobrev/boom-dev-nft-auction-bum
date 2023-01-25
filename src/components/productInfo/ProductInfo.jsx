@@ -48,7 +48,10 @@ export default function ProductInfo({
           avatar={creator.avatar}
           verified={creator.verified}
         />
-        <ProductInfoTimer onTimeEnd={onTimeEnd} timeEnd={timeEnd} />
+        <ProductInfoTimer
+          onTimeEnd={onTimeEnd}
+          timeEnd={isLive ? timeEnd : undefined}
+        />
       </Grid>
     </div>
   );
