@@ -30,8 +30,6 @@ export default function Index() {
     setTopCollectors(dataUsers);
   }, [dataUsers]);
 
-  console.log(featuredCards);
-
   return (
     <>
       <Header />
