@@ -42,7 +42,7 @@ export default function ProductInfo({
           <ProductInfoLikes ammount={likes} />
         </Stack>
       </Stack>
-      <Grid container justifyContent="space-between" sx={{ mt: 2 }}>
+      <Grid container justifyContent="space-between" sx={{ my: 2 }}>
         <ProductInfoCreator
           name={creator.name}
           avatar={creator.avatar}
