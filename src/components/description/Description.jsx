@@ -1,14 +1,16 @@
 import classNames from "classnames";
 import { Typography } from "@mui/material";
-import styles from "./Hero.module.scss";
+import styles from "./Description.module.scss";
 
-export default function Hero({ text, image }) {
+export default function Description({ text, image }) {
   return (
-    <div className={classNames(styles.descripyion)}>
+    <div className={classNames(styles.description)}>
       <Typography variant="body1" className={classNames(styles.text)}>
         {text}
       </Typography>
-      <img src={image} className={classNames(styles.image)} />
+      <div className={classNames(styles["image-container"])}>
+        {image && <img src={image} className={classNames(styles.image)} />}
+      </div>
     </div>
   );
 }
