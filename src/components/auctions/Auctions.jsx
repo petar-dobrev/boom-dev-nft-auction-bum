@@ -13,7 +13,7 @@ import Card from "../card/Card";
 import styles from "./Auctions.module.scss";
 import classNames from "classnames";
 
-export default function Trending({ cards = [] }) {
+export default function Auctions({ cards = [] }) {
   const [selectedDateRange, setSelectedDateRange] = useState("This week");
 
   const handleChange = (event) => {
