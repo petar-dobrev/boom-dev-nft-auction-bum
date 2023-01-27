@@ -17,13 +17,13 @@ import styles from "./ProfileCollectionFilters.module.scss";
 
 export default function ProfileCollectionFilters({ filters }) {
   const [sortByName, setSortByName] = useState("");
-  const [priceRange, setPriceRange] = useState("");
+  const [sortByPriceRange, setSortByPriceRange] = useState("");
 
   const handleChangeSortByName = (event) => {
     setSortByName(event.target.value);
   };
   const handleChangeSortPriceRange = (event) => {
-    setPriceRange(event.target.value);
+    setSortByPriceRange(event.target.value);
   };
 
   return (
@@ -57,7 +57,7 @@ export default function ProfileCollectionFilters({ filters }) {
             labelId="select-label-sort-price"
             id="select-sort-price"
             variant="outlined"
-            value={priceRange}
+            value={sortByPriceRange}
             onChange={handleChangeSortPriceRange}
             label="Sort Price"
           >
