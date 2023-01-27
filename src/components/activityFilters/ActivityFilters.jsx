@@ -15,17 +15,13 @@ import SearchIcon from "@mui/icons-material/Search";
 
 import styles from "./ActivityFilters.module.scss";
 
-export default function ActivityFilters({ filters }) {
-  const [sortByName, setSortByName] = useState("");
-  const [sortByType, setSortByType] = useState("");
-
-  const handleChangeSortByName = (event) => {
-    setSortByName(event.target.value);
-  };
-  const handleChangeSortByType = (event) => {
-    setSortByType(event.target.value);
-  };
-
+export default function ActivityFilters({
+  filters,
+  sortMethod,
+  filterTypeMethod,
+  handleChangeSort,
+  handleChangeFilterType,
+}) {
   return (
     <Container maxWidth="xl" className={classNames(styles["activity-filters"])}>
       <Stack
@@ -40,12 +36,14 @@ export default function ActivityFilters({ filters }) {
             labelId="select-label-sort-by-name"
             id="select-sort-by-name"
             variant="outlined"
-            value={sortByName}
-            onChange={handleChangeSortByName}
+            value={sortMethod}
+            onChange={handleChangeSort}
             label="Sort by"
           >
-            <MenuItem value={1}>Name (Ascending)</MenuItem>
-            <MenuItem value={2}>Name (Descending)</MenuItem>
+            {Object.keys(filters).length > 0 &&
+              filters.sort.map((filter) => (
+                <MenuItem value={filter.value}>{filter.label}</MenuItem>
+              ))}
           </Select>
         </FormControl>
         <FormControl className={classNames(styles["select-label-sort"])}>
@@ -54,12 +52,14 @@ export default function ActivityFilters({ filters }) {
             labelId="select-label-type"
             id="select-type"
             variant="outlined"
-            value={sortByType}
-            onChange={handleChangeSortByType}
+            value={filterTypeMethod}
+            onChange={handleChangeFilterType}
             label="Type"
           >
-            <MenuItem value={3}>Liked</MenuItem>
-            <MenuItem value={4}>Bought</MenuItem>
+            {Object.keys(filters).length > 0 &&
+              filters.type.map((filter) => (
+                <MenuItem value={filter.value}>{filter.label}</MenuItem>
+              ))}
           </Select>
         </FormControl>
         <TextField
