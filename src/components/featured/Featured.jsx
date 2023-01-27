@@ -7,9 +7,9 @@ import styles from "./Featured.module.scss";
 
 export default function Featured({ items = [] }) {
   const router = useRouter();
-  const handleClick = (e) => {
+  const handleClick = (id, e) => {
     e.preventDefault();
-    router.push(e.target.dataset.href);
+    router.push(`/product/${id}`);
   };
 
   return (
@@ -20,12 +20,11 @@ export default function Featured({ items = [] }) {
             key={Math.floor(Math.random() * Date.now()).toString(16)}
             cols={index === 0 ? 3 : 1}
             rows={index === 0 ? 2 : 1}
-            onClick={handleClick}
+            onClick={(e) => handleClick(item.id, e)}
           >
             <img
               src={item.source.url}
               alt={item.title}
-              data-href={item.href}
               loading="lazy"
               className={classNames(styles.image)}
             />
