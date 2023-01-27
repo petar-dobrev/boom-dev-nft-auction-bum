@@ -18,4 +18,3 @@ export default function ProductInfoCreator({
     </div>
   );
 }
-// className={classNames(styles.productImage)}

@@ -31,7 +31,7 @@ export default function Card({
   const badge = (
     <div className={classNames(styles.badge)}>
       <CircleIcon fontSize="10px" />
-      <p className={classNames(styles.badgeText)}>LIVE</p>
+      <p className={classNames(styles["badge-text"])}>LIVE</p>
     </div>
   );
 
@@ -54,14 +54,14 @@ export default function Card({
       >
         <CardContent>
           <Avatar url={user.avatar.url} verified={user.verified} size="33" />
-          <div className={classNames(styles.mediaContainer)}>
+          <div className={classNames(styles["media-container"])}>
             {timeLeft && badge}
             <img src={mediaUrl} className={classNames(styles.media)} />
             {timeLeft && (
               <Countdown date={Date.now() + timeLeft} renderer={countdown} />
             )}
           </div>
-          <div className={classNames(styles.cardText)}>
+          <div className={classNames(styles["card-text"])}>
             <div>
               <Typography className={classNames(styles.title)}>
                 {name}

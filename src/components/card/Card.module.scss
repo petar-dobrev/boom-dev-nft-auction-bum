@@ -1,6 +1,6 @@
 @use "../../styles/colors";
 
-.mediaContainer {
+.media-container {
   position: relative;
   width: 309px;
   height: 288px;
@@ -13,7 +13,7 @@
   border-radius: 15px;
 }
 
-.cardText {
+.card-text {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -46,7 +46,7 @@
   border-radius: 7px;
 }
 
-.badgeText {
+.badge-text {
   font-size: 0.88rem;
   font-weight: 700;
   margin: 0;

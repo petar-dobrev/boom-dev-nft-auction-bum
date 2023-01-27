@@ -19,22 +19,31 @@ export default function Header() {
         </Grid>
         <Grid item>
           <TextField
-            className={classNames(styles.searchField)}
+            className={classNames(styles["search-field"])}
             id="search-field"
             placeholder="Find items, users and activities"
             InputProps={{
               startAdornment: (
                 <InputAdornment position="start">
-                  <SearchIcon className={classNames(styles.searchIcon)} />
+                  <SearchIcon className={classNames(styles["search-icon"])} />
                 </InputAdornment>
               ),
             }}
           />
         </Grid>
         <Grid item>
-          <Button className={classNames(styles.textButton)}>Home</Button>
-          <Button className={classNames(styles.textButton)}>Activity</Button>
-          <Button variant="contained">Explore</Button>
+          <Button className={classNames(styles["text-button"])} href="/">
+            Home
+          </Button>
+          <Button
+            className={classNames(styles["text-button"])}
+            href="/activity"
+          >
+            Activity
+          </Button>
+          <Button variant="contained" href="/explore">
+            Explore
+          </Button>
         </Grid>
       </Grid>
     </Container>

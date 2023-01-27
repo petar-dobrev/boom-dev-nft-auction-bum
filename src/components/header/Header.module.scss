@@ -8,18 +8,18 @@
     ;
   }
 
-.searchField {
+.search-field {
     background-color: colors.$background_default;
     border-radius: 30px;
     width: 580px;
 
 }
   
-.searchIcon {
+.search-icon {
     color: colors.$text_primary
 }
 
-.textButton {
+.text-button {
     color: colors.$text_primary !important;
     text-transform: capitalize !important;
     font-weight: 400 !important;
