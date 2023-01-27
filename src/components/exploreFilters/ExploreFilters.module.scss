@@ -1,0 +1,15 @@
+@use "../../styles/colors.scss";
+
+.select-label-sort {
+    width: 220px;
+}
+
+.search-field {
+    width: 340px;
+    border-radius: 30px;
+    background-color: colors.$background_paper;
+}
+  
+.search-icon {
+    color: colors.$text_primary
+}
