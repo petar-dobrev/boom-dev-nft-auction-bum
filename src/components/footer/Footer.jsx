@@ -12,15 +12,15 @@ export default function Footer() {
             <Logo type="muted" />
           </Grid>
           <Grid item>
-            <p className={classNames(styles.rightsText)}>
+            <p className={classNames(styles["rights-text"])}>
               Bum All Rights Reserved 2021
             </p>
           </Grid>
           <Grid item>
-            <Button className={classNames(styles.textButton)}>
+            <Button className={classNames(styles["text-button"])}>
               Privacy Policy
             </Button>
-            <Button className={classNames(styles.textButton)}>
+            <Button className={classNames(styles["text-button"])}>
               Cookie Policy
             </Button>
           </Grid>
