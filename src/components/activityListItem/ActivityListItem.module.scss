@@ -1,0 +1,22 @@
+@use "../../styles/colors.scss";
+
+
+.list-item {
+    width: 940px;
+    padding: 28px;
+    border-radius: 15px;
+    background-color: colors.$background_paper;
+}
+
+.user{
+    font-weight: 600;
+}
+
+.text, .text-secondary {
+    margin: 0;
+}
+
+.text-secondary {
+    font-size: .88rem;
+    color: colors.$text_secondary;
+}
