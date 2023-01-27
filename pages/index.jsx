@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 
-import dataFeatured from "../data/featured.json";
 import dataTrending from "../data/trending.json";
 import dataUsers from "../data/users.json";
 import dataNfts from "../data/nfts.json";
@@ -17,10 +16,13 @@ export default function Index() {
   const [featuredCards, setFeaturedCards] = useState([]);
   const [trendingCards, settrendingCards] = useState([]);
   const [topCollectors, setTopCollectors] = useState([]);
+  const apiUrl = process.env.apiUrl;
 
   useEffect(() => {
-    setFeaturedCards(dataFeatured);
-  }, [dataFeatured]);
+    fetch(`${apiUrl}/featured`)
+      .then((response) => response.json())
+      .then((data) => setFeaturedCards(data.nfts));
+  });
 
   useEffect(() => {
     settrendingCards(dataTrending);
