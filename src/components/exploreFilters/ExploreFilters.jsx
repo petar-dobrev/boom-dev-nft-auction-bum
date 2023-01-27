@@ -15,17 +15,13 @@ import SearchIcon from "@mui/icons-material/Search";
 
 import styles from "./ExploreFilters.module.scss";
 
-export default function ExploreFilters({ filters }) {
-  const [sortByName, setSortByName] = useState("");
-  const [sortByPriceRange, setSortByPriceRange] = useState("");
-
-  const handleChangeSortByName = (event) => {
-    setSortByName(event.target.value);
-  };
-  const handleChangeSortPriceRange = (event) => {
-    setSortByPriceRange(event.target.value);
-  };
-
+export default function ExploreFilters({
+  filters,
+  sortMethod,
+  filterPriceMethod,
+  handleChangeSort,
+  handleChangeFilterPrice,
+}) {
   return (
     <Container maxWidth="xl" className={classNames(styles["activity-filters"])}>
       <Stack
@@ -40,12 +36,14 @@ export default function ExploreFilters({ filters }) {
             labelId="select-label-sort-by-name"
             id="select-sort-by-name"
             variant="outlined"
-            value={sortByName}
-            onChange={handleChangeSortByName}
+            value={sortMethod}
+            onChange={handleChangeSort}
             label="Sort by"
           >
-            <MenuItem value={1}>Name (Ascending)</MenuItem>
-            <MenuItem value={2}>Name (Descending)</MenuItem>
+            {Object.keys(filters).length > 0 &&
+              filters.sort.map((filter) => (
+                <MenuItem value={filter.value}>{filter.label}</MenuItem>
+              ))}
           </Select>
         </FormControl>
         <FormControl className={classNames(styles["select-label-sort"])}>
@@ -54,13 +52,14 @@ export default function ExploreFilters({ filters }) {
             labelId="select-label-sort-by-price"
             id="select-sort-by-price"
             variant="outlined"
-            value={sortByPriceRange}
-            onChange={handleChangeSortPriceRange}
+            value={filterPriceMethod}
+            onChange={handleChangeFilterPrice}
             label="Price range"
           >
-            <MenuItem value={3}>0.3 - 0.5 ETH</MenuItem>
-            <MenuItem value={4}>0.5 - 2 ETH</MenuItem>
-            <MenuItem value={5}>2- 3 ETH</MenuItem>
+            {Object.keys(filters).length > 0 &&
+              filters.price.map((filter) => (
+                <MenuItem value={filter.value}>{filter.label}</MenuItem>
+              ))}
           </Select>
         </FormControl>
         <TextField
