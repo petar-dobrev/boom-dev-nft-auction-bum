@@ -15,14 +15,15 @@ export default function Index() {
   const [featuredCards, setFeaturedCards] = useState([]);
   const [trendingCards, setTrendingCards] = useState([]);
   const [trendingFilters, setTrendingFilters] = useState([]);
-  const [topCollectors, setTopCollectors] = useState([]);
+  const [collectors, setCollectors] = useState([]);
+  const [collectorFilters, setCollectorFilters] = useState([]);
   const apiUrl = process.env.apiUrl;
 
   useEffect(() => {
     fetch(`${apiUrl}/featured`)
       .then((response) => response.json())
       .then((data) => setFeaturedCards(data.nfts));
-  });
+  }, []);
 
   useEffect(() => {
     fetch(`${apiUrl}/trending`)
@@ -31,18 +32,24 @@ export default function Index() {
         setTrendingCards(data.nfts);
         setTrendingFilters(data.filters);
       });
-  });
+  }, []);
 
   useEffect(() => {
-    setTopCollectors(dataUsers);
-  }, [dataUsers]);
+    fetch(`${apiUrl}/top-collectors`)
+      .then((response) => response.json())
+      .then((data) => {
+        data.users.sort((a, b) => b.nftCount - a.nftCount);
+        setCollectors(data.users);
+        setCollectorFilters(data.filters);
+      });
+  }, []);
 
   return (
     <>
       <Header />
       <Featured items={featuredCards} />
       <Trending cards={trendingCards} filters={trendingFilters} />
-      <TopCollectors collectors={topCollectors} />
+      <TopCollectors collectors={collectors} filters={collectorFilters} />
       <How
         title="how it works"
         description="Discover, collect, and sell extraordinary NFTs
