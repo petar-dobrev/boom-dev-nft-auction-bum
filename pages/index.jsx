@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 
-import dataTrending from "../data/trending.json";
 import dataUsers from "../data/users.json";
 import dataNfts from "../data/nfts.json";
 
@@ -14,7 +13,8 @@ import Footer from "../src/components/footer/Footer";
 
 export default function Index() {
   const [featuredCards, setFeaturedCards] = useState([]);
-  const [trendingCards, settrendingCards] = useState([]);
+  const [trendingCards, setTrendingCards] = useState([]);
+  const [trendingFilters, setTrendingFilters] = useState([]);
   const [topCollectors, setTopCollectors] = useState([]);
   const apiUrl = process.env.apiUrl;
 
@@ -25,8 +25,13 @@ export default function Index() {
   });
 
   useEffect(() => {
-    settrendingCards(dataTrending);
-  }, [dataTrending]);
+    fetch(`${apiUrl}/trending`)
+      .then((response) => response.json())
+      .then((data) => {
+        setTrendingCards(data.nfts);
+        setTrendingFilters(data.filters);
+      });
+  });
 
   useEffect(() => {
     setTopCollectors(dataUsers);
@@ -36,7 +41,7 @@ export default function Index() {
     <>
       <Header />
       <Featured items={featuredCards} />
-      <Trending cards={trendingCards} />
+      <Trending cards={trendingCards} filters={trendingFilters} />
       <TopCollectors collectors={topCollectors} />
       <How
         title="how it works"
