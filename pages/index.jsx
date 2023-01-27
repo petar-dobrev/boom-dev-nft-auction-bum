@@ -84,7 +84,7 @@ on the world's first & largest NFT marketplace. There are  three things you'll n
           },
         ]}
       />
-      <Auctions cards={auctions} />
+      <Auctions cards={auctions} filters={auctionFilters} />
       <Footer />
     </>
   );
