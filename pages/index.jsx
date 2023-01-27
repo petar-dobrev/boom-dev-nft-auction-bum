@@ -17,6 +17,8 @@ export default function Index() {
   const [trendingFilters, setTrendingFilters] = useState([]);
   const [collectors, setCollectors] = useState([]);
   const [collectorFilters, setCollectorFilters] = useState([]);
+  const [auctions, setAuctions] = useState([]);
+  const [auctionFilters, setAuctionFilters] = useState([]);
   const apiUrl = process.env.apiUrl;
 
   useEffect(() => {
@@ -41,6 +43,15 @@ export default function Index() {
         data.users.sort((a, b) => b.nftCount - a.nftCount);
         setCollectors(data.users);
         setCollectorFilters(data.filters);
+      });
+  }, []);
+
+  useEffect(() => {
+    fetch(`${apiUrl}/live-auctions`)
+      .then((response) => response.json())
+      .then((data) => {
+        setAuctions(data.nfts);
+        setAuctionFilters(data.filters);
       });
   }, []);
 
@@ -73,7 +84,7 @@ on the world's first & largest NFT marketplace. There are  three things you'll n
           },
         ]}
       />
-      <Auctions cards={trendingCards} />
+      <Auctions cards={auctions} />
       <Footer />
     </>
   );
